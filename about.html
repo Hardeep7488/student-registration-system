@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.student-card {
+    width: 280px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.status {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.student-card button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+ #main{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+ }
+ #card2{
+    position: relative;
+    left: 20px;
+    top: 30px;
+ }
+ #help{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 50%;
+    padding: 10px;
+ }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    height: 30px;
+    margin: 0px;
+    position: sticky;
+    top: 0px;
+}
+#card3{
+    z-index: 1;
+    left: 50px;
+    position: absolute;
+    top: 100px;
+
+}
+body {
+    min-height: 2000px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div id="logo">logo</div>
+        <div id="nav"><a href="">a</a><a href="">b</a><a href="">b</a><a href="">d</a></div>
+    </header>
+<div id="main">
+    <div class="student-card">
+
+    <span class="status">Active</span>
+
+    <h3>Rahul Sharma</h3>
+
+    <p>Roll No: 1011</p>
+
+    <button>View Details</button>
+
+</div>
+<div class="student-card" id="card2">
+
+    <span class="status">Active</span>
+
+    <h3>Rahul Sharma</h3>
+
+    <p>Roll No: 1012</p>
+
+    <button>View Details</button>
+
+</div>
+<div class="student-card" id="card3">
+
+    <span class="status">Active</span>
+
+    <h3>Rahul Sharma</h3>
+
+    <p>Roll No: 1013</p>
+
+    <button>View Details</button>
+
+</div>
+</div>
+
+<button id="help">help</button>
+
+</body>
+</html>

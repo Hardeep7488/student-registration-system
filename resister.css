@@ -1,0 +1,105 @@
+:root {
+  --primary: #0D47A1;
+  --secondary: #1976D2;
+  --success: #4CAF50;
+  --warning: #FF9800;
+  --purple: #8E24AA;
+  --light: #eef3fa;
+  --white: #FFFFFF;
+  --dark: #1E293B;
+}
+/* Registration page layout */
+
+main {
+    padding: 40px 20px;
+    background-color:var(--light);
+    min-height: 70vh;
+}
+
+/* Registration form card */
+#studentForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+#form-heading {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 25px;
+}
+
+/* Labels */
+#studentForm label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+/* Text inputs, dropdown and address */
+#studentForm input:not([type="radio"]),
+#studentForm select,
+#studentForm textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Focus effect */
+#studentForm input:focus,
+#studentForm select:focus,
+#studentForm textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 4px rgba(25, 118, 210, 0.3);
+}
+
+/* Gender options */
+#studentForm input[type="radio"] {
+    margin: 10px 5px 10px 20px;
+}
+
+/* Buttons */
+#buttons{
+    display: flex;
+    gap: 10px;
+}
+
+#studentForm button {
+    width: 50%;
+    margin-top: 22px;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--secondary);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#studentForm button:hover {
+    background-color: var(--primary);
+}
+
+#studentForm .reset-btn {
+    background-color: #64748b;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    #studentForm {
+        padding: 20px;
+    }
+
+    main {
+        padding: 25px 12px;
+    }
+}

@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Resister.css">
+</head>
+<body>
+    <header id="header">
+       <div id="logo">
+           <img src="icon/favicon.svg" alt="logo" id="logoimg">
+           <h3>Student Registration System</h3>
+       </div>
+            <nav id="navigation">
+                <a href="index.html" class="navbutton">Home</a>
+                <a href="Register.html" class="navbutton">Resister</a>
+                <a href="view-student.html" class="navbutton">View Students</a>
+                <a href="about.html" class="navbutton">About</a>
+            </nav>
+     </header>
+     <main>
+        <form action="" id="studentForm">
+            <h1 id="form-heading">Student Registration Form</h1>
+            <label for="student-name">Name :</label>
+            <input type="text" name="student-name" id="student-name" required >
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" required>
+            <label for="roll">Roll No.:</label>
+            <input type="number" name="roll" id="roll" required>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="Male"> Male
+            <input type="radio" name="gender" id="female" value="Female"> Female
+            <input type="radio" name="gender" id="other" value="Other"> Other
+            <label for="course">Course :</label>
+            <select name="course" id="course" required>
+                <option value="">Select Course</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="Msc">Msc</option>
+            </select>
+            <label for="address">Address :</label>
+            <textarea name="address" id="address"></textarea>
+
+            <div id="buttons">
+
+                <button type="submit" id="submitbutton">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+     </main>
+
+
+     <footer id="footer">
+            &copy; 2026 Student Registration System. All rights reserved
+        </footer>
+
+        <script type="module" src="Js/script.js" defer></script>
+</body>
+</html>
